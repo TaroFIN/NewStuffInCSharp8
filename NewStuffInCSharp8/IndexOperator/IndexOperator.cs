@@ -1,0 +1,28 @@
+﻿namespace NewStuffInCSharp8
+{
+    public class IndexOperator
+    {
+        public static void Output()
+        {
+            var cities = new string[] {
+            "New York", // 0 - 5
+            "Vienna",   // 1 - 4
+            "Madrid",   // 2 - 3
+            "London",   // 3 - 2
+            "Cairo"     // 4 - 1
+            };
+
+            Console.WriteLine(cities[cities.Length - 1]);
+            Console.WriteLine(cities[^2]);
+
+            List<int> numbers = new List<int>();
+            numbers.Add(0);
+            numbers.Add(1);
+            numbers.Add(4);
+            numbers.Add(5);
+
+            Console.WriteLine(numbers[^2]);
+
+        }
+    }
+}
